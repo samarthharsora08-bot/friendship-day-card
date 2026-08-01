@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Friendship Day</title>
+<style>
+body{margin:0;font-family:Arial;background:linear-gradient(135deg,#7ec8ff,#ffd6f5);display:flex;justify-content:center;align-items:center;height:100vh;overflow:hidden}
+.card{background:#fff;padding:24px;border-radius:20px;max-width:420px;box-shadow:0 10px 30px rgba(0,0,0,.2);text-align:center}
+h1{color:#ff4f8b}button{padding:12px 20px;border:none;border-radius:30px;background:#ff4f8b;color:#fff;font-size:16px}
+#msg{display:none;margin-top:20px;line-height:1.6}
+.heart{position:fixed;color:#ff4f8b;animation:f 6s linear infinite}
+@keyframes f{from{transform:translateY(100vh)}to{transform:translateY(-10vh)}}
+</style></head><body>
+<div class='card'>
+<div style='font-size:60px'>🧸</div>
+<h1>Happy Friendship Day, Partner Akshara 💙</h1>
+<p>From Samarth</p>
+<button onclick="document.getElementById('msg').style.display='block';this.style.display='none'">Open Your Surprise 💌</button>
+<div id='msg'>
+<p><b>Dear Akshara ❤️</b></p>
+<p>Thank you for being such an important part of my life. I hope you always stay by my side. I'll always try my best to earn your trust.</p>
+<p>Tumhara gussa ho ya koi bhi situation, main sab sambhalne ki koshish karunga. Bas kabhi kisi aur ki wajah se hamare bond ko kamzor mat hone dena.</p>
+<p>No matter what happens, you'll always be my favorite partner and bestie.</p>
+<h2>I Love You Akshara ❤️</h2>
+<p>— Samarth</p>
+<p style='font-size:12px'>To add the song "Aarzu", place an MP3 file named <b>aarzu.mp3</b> in the same folder and uncomment the audio tag.</p>
+<!-- <audio autoplay loop controls src="aarzu.mp3"></audio> -->
+</div></div>
+<script>
+for(let i=0;i<30;i++){let d=document.createElement('div');d.className='heart';d.textContent='❤';d.style.left=Math.random()*100+'vw';d.style.animationDelay=(Math.random()*6)+'s';document.body.appendChild(d);}
+</script></body></html>
